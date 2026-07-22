@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgriConnect AI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#0a7b3d;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background-image:url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.55);
+    padding:40px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#28a745;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d7d33;
+}
+
+/* Sections */
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0a7b3d;
+}
+
+/* About */
+
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:45%;
+    border-radius:10px;
+}
+
+.about-text{
+    width:55%;
+    line-height:1.8;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:30%;
+    margin-top:20px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    padding:15px;
+    color:#0a7b3d;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+/* Statistics */
+
+.stats{
+    background:#0a7b3d;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+
+.stats h1{
+    font-size:40px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:900px){
+
+.about{
+flex-direction:column;
+}
+
+.about img,
+.about-text{
+width:100%;
+}
+
+.card{
+width:100%;
+}
+
+.stats{
+flex-direction:column;
+gap:30px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h2>AgriConnect AI</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+
+<div class="overlay">
+
+<h1>Smart Farming Begins Here</h1>
+
+<p>Helping farmers connect with buyers, detect crop diseases using AI, and get the best market prices.</p>
+
+<a href="#" class="btn">Explore More</a>
+
+</div>
+
+</div>
+
+<section>
+
+<h2>About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80">
+
+<div class="about-text">
+
+<p>
+AgriConnect AI is a modern agriculture platform that connects farmers,
+buyers, and agricultural experts. Our mission is to improve farmers'
+income through technology.
+</p>
+
+<p>
+Our platform provides AI-powered crop disease detection, real-time market
+prices, weather forecasting, and direct communication between buyers and
+sellers.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80">
+
+<h3>Crop Marketplace</h3>
+
+<p>
+Buyers and sellers can directly negotiate crop prices without middlemen.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=800&q=80">
+
+<h3>AI Disease Detection</h3>
+
+<p>
+Upload a crop image and receive instant disease prediction with treatment suggestions.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80">
+
+<h3>Weather Forecast</h3>
+
+<p>
+Receive accurate weather updates and farming recommendations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div>
+<h1>10K+</h1>
+<p>Farmers</p>
+</div>
+
+<div>
+<h1>500+</h1>
+<p>Buyers</p>
+</div>
+
+<div>
+<h1>98%</h1>
+<p>AI Accuracy</p>
+</div>
+
+<div>
+<h1>24×7</h1>
+<p>Support</p>
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>Email:</strong> info@agriconnectai.com</p>
+
+<p><strong>Phone:</strong> +91 98765 43210</p>
+
+<p><strong>Location:</strong> Noida, Uttar Pradesh, India</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 AgriConnect AI | Designed with HTML & CSS</p>
+
+</footer>
+
+</body>
+</html>
